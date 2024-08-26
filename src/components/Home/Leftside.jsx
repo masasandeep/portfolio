@@ -15,9 +15,9 @@ const Leftside = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className=" w-full lg:w-1/2 flex flex-col gap-5 ">
+    <div className=" w-full lg:w-1/2 flex flex-col gap-5 px-10 py-10 ">
       <h4 className="text-transform: uppercase">welcome to my world</h4>
-      <h1 className="text-6xl text-white">
+      <h1 className="text-6xl text-white font-bold">
         Hi,I'm{" "}
         <span className="text-designColor font-titleFont">Sandeep Kumar</span>
       </h1>

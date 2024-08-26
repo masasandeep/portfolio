@@ -6,8 +6,8 @@ export const navLinksdata = [
     },
     {
       _id: 1002,
-      title: "Features",
-      link: "features",
+      title: "Skills",
+      link: "skills",
     },
     {
       _id: 1003,
@@ -25,3 +25,30 @@ export const navLinksdata = [
       link: "contact",
     },
   ];
+  export const skills = [
+    'Django',
+    'React js',
+    'Tailwind',
+    'python',
+    'c++',
+    'Node js',
+    'Express js',
+    'Mongo Db'
+  ]
+export const projectsData=[
+  {
+    title: 'Chat-Application',
+    desc:'',
+    src: ''
+  },
+  {
+    title: 'Room4Thought',
+    des:'Developed a Django-based web application enabling students to create and join discussion rooms. Implemented features for room creation, content posting, and post visibility for all members, along with search functionality and a feed of recent posts to boost engagement.',
+    src: ''
+  },
+  {
+    title: 'Chat-Application',
+    desc:'',
+    src: ''
+  }
+]

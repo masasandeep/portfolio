@@ -1,6 +1,8 @@
 
 import Home from "./components/Home/Home"
 import Navbar from "./components/Navbar"
+import Project from "./components/projects/Project"
+import Skills from "./components/skills/skills"
 
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     <main>
       <Navbar/>
       <Home/>
+      <Skills/>
+      <Project/>
     </main>
   )
 }
