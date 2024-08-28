@@ -19,3 +19,22 @@
     @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
 }
 }
+@layer utilities {
+    .scrollbar-thin::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-track {
+        @apply bg-transparent; /* Make the track transparent */
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+        @apply bg-gray-500; /* Tailwind utility for thumb color */
+        border-radius: 10px; /* Rounded corners */
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        @apply bg-gray-700; /* Darker on hover */
+    }
+}

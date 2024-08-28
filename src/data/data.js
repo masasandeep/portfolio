@@ -1,3 +1,6 @@
+import chatapp from '../assets/chatapp.png'
+import todo from '../assets/todoapp.png'
+import room4thought  from '../assets/Room4Thought.png'
 export const navLinksdata = [
     {
       _id: 1001,
@@ -38,17 +41,17 @@ export const navLinksdata = [
 export const projectsData=[
   {
     title: 'Chat-Application',
-    desc:'',
-    src: ''
+    des:'Developed a Django-based web application enabling students to create and join discussion rooms. Implemented features for room creation, content posting, and post visibility for all members, along with search functionality and a feed of recent posts to boost engagement.',
+    src: chatapp
   },
   {
     title: 'Room4Thought',
     des:'Developed a Django-based web application enabling students to create and join discussion rooms. Implemented features for room creation, content posting, and post visibility for all members, along with search functionality and a feed of recent posts to boost engagement.',
-    src: ''
+    src: room4thought
   },
   {
-    title: 'Chat-Application',
-    desc:'',
-    src: ''
+    title: 'todo',
+    des:'Developed a Django-based web application enabling students to create and join discussion rooms. Implemented features for room creation, content posting, and post visibility for all members, along with search functionality and a feed of recent posts to boost engagement.',
+    src: todo
   }
 ]
