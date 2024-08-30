@@ -2,6 +2,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaNode } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb } from "react-icons/si";
 import { BiLogoDjango } from "react-icons/bi";
+import { FaInstagram } from "react-icons/fa";
 const Leftside = () => {
   const [text] = useTypewriter({
     words: [
@@ -30,13 +31,17 @@ const Leftside = () => {
         <h4 className="text-tranform: uppercase text-gray-400 mb-4">Find me on</h4>
         <div className="flex gap-4">
           <span className="bannerIcon">
-            <FaFacebookF />
+            <a href="https://www.facebook.com/profile.php?id=100072142543167&mibextid=kFxxJD"><FaFacebookF /></a>
+            
+          </span>
+          <span className="bannerIcon"><a href="https://www.instagram.com/m.s.kumar12?igsh=ZzRuNDdza25naTc2">
+          <FaInstagram />
+          </a>
           </span>
           <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
+          <a href="https://www.linkedin.com/in/sandeep-kumar-masa-b246b4255/">
             <FaLinkedinIn />
+            </a>
           </span>
         </div>
         </div>

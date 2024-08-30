@@ -1,9 +1,8 @@
 import React from 'react'
 import { BsGithub } from "react-icons/bs";
-import { FaGlobe } from "react-icons/fa";
 
 
-const ProjectCard = ({ title, des, src }) => {
+const ProjectCard = ({ title, des, src,Link }) => {
   return (
     <div className="w-full  max-h-[400px] p-2 rounded-lg shadow-shadowOne flex flex-col">
     <div className="flex-grow min-h-[50%] relative overflow-hidden rounded-lg ">
@@ -19,16 +18,13 @@ const ProjectCard = ({ title, des, src }) => {
           <h3 className="text-base uppercase text-designColor font-normal">
             {title}
           </h3>
-          <div className="flex gap-2">
+          <div className="px-5">
             <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-              <BsGithub />
-            </span>
-            <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-              <FaGlobe />
+              <a href={Link}><BsGithub /></a>
             </span>
           </div>
         </div>
-        <p className="text-sm tracking-wide mt-3 hover:text-white">
+        <p className="text-sm tracking-wide mt-3 text-white">
           {des}
         </p>
       </div>

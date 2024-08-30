@@ -18,11 +18,6 @@ export const navLinksdata = [
       link: "projects",
     },
     {
-      _id: 1004,
-      title: "Resume",
-      link: "resume",
-    },
-    {
       _id: 1006,
       title: "Contact",
       link: "contact",
@@ -42,16 +37,19 @@ export const projectsData=[
   {
     title: 'Chat-Application',
     des:'Developed a Django-based web application enabling students to create and join discussion rooms. Implemented features for room creation, content posting, and post visibility for all members, along with search functionality and a feed of recent posts to boost engagement.',
-    src: chatapp
+    src: chatapp,
+    Link: 'https://github.com/masasandeep/chat-app'
   },
   {
     title: 'Room4Thought',
     des:'Developed a Django-based web application enabling students to create and join discussion rooms. Implemented features for room creation, content posting, and post visibility for all members, along with search functionality and a feed of recent posts to boost engagement.',
-    src: room4thought
+    src: room4thought,
+    Link: 'https://github.com/masasandeep/Room4Thought'
   },
   {
     title: 'todo',
     des:'Developed a Django-based web application enabling students to create and join discussion rooms. Implemented features for room creation, content posting, and post visibility for all members, along with search functionality and a feed of recent posts to boost engagement.',
-    src: todo
-  }
+    src: todo,
+    Link: 'https://github.com/masasandeep/todo_application'
+  },
 ]

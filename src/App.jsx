@@ -1,8 +1,9 @@
 
+import Contact from "./components/contact/contact"
 import Home from "./components/Home/Home"
 import Navbar from "./components/Navbar"
 import Project from "./components/projects/Project"
-import Skills from "./components/skills/skills"
+import Skills from "./components/skills/Skills"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Home/>
       <Skills/>
       <Project/>
+      <Contact/>
     </main>
   )
 }

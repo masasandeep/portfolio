@@ -8,13 +8,12 @@ const Project = () => {
     <>
    
     <section id='projects' className='h-auto min-h-screen bg-bodyColor'>
-    <div className="flex justify-center items-center text-center">
+
     <Title title='Projects'/>
-      </div>
-      <div className=' p-20 md:p-10  grid grid-cols-1 md:grid-cols-3 w-full gap-5'>
+      <div className=' p-20 md:p-10  grid grid-cols-1 md:grid-cols-3 w-full gap-5 '>
       {
-        projectsData.map(({title,src,des})=>
-        <ProjectCard title={title} src={src} des={des}/>
+        projectsData.map(({title,src,des,Link})=>
+        <ProjectCard title={title} src={src} des={des} Link={Link}/>
         )
 
       }
