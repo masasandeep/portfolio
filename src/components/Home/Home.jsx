@@ -1,5 +1,5 @@
 import Leftside from "./Leftside";
-import RightSide from "./rightside";
+import RightSide from "./Rightside";
 import {motion} from 'framer-motion'
 const Home = () => {
    
