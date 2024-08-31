@@ -12,8 +12,8 @@ const Project = () => {
     <Title title='Projects'/>
       <div className=' p-20 md:p-10  grid grid-cols-1 md:grid-cols-3 w-full gap-5 '>
       {
-        projectsData.map(({title,src,des,Link})=>
-        <ProjectCard title={title} src={src} des={des} Link={Link}/>
+        projectsData.map(({title,src,des,Link,_id})=>
+        <ProjectCard key={_id} title={title} src={src} des={des} Link={Link}/>
         )
 
       }

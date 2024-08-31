@@ -7,11 +7,11 @@ import { useState } from "react";
 const Navbar = () => {
   const [showMenu,setShowMenu] = useState(false)
   return (
-    <nav className="sticky top-0 flex text-xl items-center justify-between h-20 font-bold p-5  bg-bodyColor   z-50 font-titleFont md:px-32">
+    <nav className="sticky top-0 flex text-xl items-center justify-between h-20 font-bold md:px-10 px-16   bg-bodyColor   z-50 font-titleFont">
       <div className="logo text-gray-400 text-transfrom: uppercase">
         Sandeep Kumar
       </div>
-      <ul className="hidden md:flex items-center space-x-14">
+      <ul className="hidden md:flex items-center space-x-12">
         {navLinksdata.map(({_id,title,link})=>(
           <li key={_id} className="text-gray-400 cursor-pointer tracking-wide  hover:text-red-600 duration-300">
             <Link

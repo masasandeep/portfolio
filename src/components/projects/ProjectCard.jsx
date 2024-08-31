@@ -1,13 +1,19 @@
 import React from 'react'
 import { BsGithub } from "react-icons/bs";
-
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../data/data';
 
 const ProjectCard = ({ title, des, src,Link }) => {
   return (
-    <div className="w-full  max-h-[400px] p-2 rounded-lg shadow-shadowOne flex flex-col">
+    <motion.div 
+    whileHover={{scale:1.1}}
+    variants={fadeIn('up',0.3)}
+    initial='hidden'
+    whileInView={'show'}
+    className="w-full  max-h-[400px] p-2 rounded-lg shadow-shadowOne flex flex-col">
     <div className="flex-grow min-h-[50%] relative overflow-hidden rounded-lg ">
       <img
-        className="w-full h-60 group-hover:scale-110 duration-300 cursor-pointer object-cover"
+        className="w-full h-60 hover:scale-110 duration-300 cursor-pointer object-cover"
         src={src}
         alt="src"
       />
@@ -29,7 +35,7 @@ const ProjectCard = ({ title, des, src,Link }) => {
         </p>
       </div>
     </div>
-  </div>
+  </motion.div>
 );
 }
 

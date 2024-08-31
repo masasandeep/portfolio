@@ -3,6 +3,8 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaNode } from "react-ico
 import { SiTailwindcss, SiMongodb } from "react-icons/si";
 import { BiLogoDjango } from "react-icons/bi";
 import { FaInstagram } from "react-icons/fa";
+import {motion} from 'framer-motion'
+import { fadeIn } from "../../data/data";
 const Leftside = () => {
   const [text] = useTypewriter({
     words: [
@@ -16,17 +18,28 @@ const Leftside = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className=" w-full lg:w-1/2 flex flex-col gap-5 px-10 py-10 ">
+    <motion.div 
+    variants={fadeIn('down',0.4)}
+    initial='hidden'
+    whileInView={'show'}
+    className=" w-full lg:w-1/2 flex flex-col gap-5 px-10 py-10 ">
       <h4 className="text-transform: uppercase">welcome to my world</h4>
       <h1 className="text-6xl text-white font-bold">
         Hi,I'm{" "}
         <span className="text-designColor font-titleFont">Sandeep Kumar</span>
       </h1>
-      <h1 className="text-4xl font-bold text-white">
+      <motion.h1
+      variants={fadeIn('right',0.4)}
+      initial='hidden'
+      whileInView={'show'} className="text-4xl font-bold text-white">
         a <span>{text}</span>
         <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="#ff014f" />
-      </h1>
-      <div className="flex flex-col lg:flex-row gap-6 justify-between">
+      </motion.h1>
+      <motion.div
+      variants={fadeIn('left',0.4)}
+      initial='hidden'
+      whileInView={'show'}
+      className="flex flex-col lg:flex-row gap-6 justify-between">
         <div>
         <h4 className="text-tranform: uppercase text-gray-400 mb-4">Find me on</h4>
         <div className="flex gap-4">
@@ -67,8 +80,8 @@ const Leftside = () => {
           </span>
         </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
