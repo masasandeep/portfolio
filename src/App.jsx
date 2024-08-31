@@ -1,6 +1,6 @@
 
 import Profiles from "./components/coding_profiles/Profiles"
-import Contact from "./components/contact/contact"
+import Contact from "./components/contact/Contact"
 import Home from "./components/Home/Home"
 import Navbar from "./components/Navbar"
 import Project from "./components/projects/Project"
