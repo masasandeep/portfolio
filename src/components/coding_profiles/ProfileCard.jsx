@@ -3,7 +3,7 @@ import { fadeIn } from '../../data/data'
 const ProfileCard = ({src,solved,link}) => {
   return (
     <motion.div 
-    whileHover={{scale:1.2}}
+    whileHover={{scale:1.1}}
     variants={fadeIn('up',0.2)}
     initial='hidden'
     whileInView={'show'}
